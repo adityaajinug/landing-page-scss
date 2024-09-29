@@ -1,0 +1,41 @@
+// Layouts define like navbar and footer
+// ------------------------------------------------------
+
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  padding: 16px 20px;
+  .navbar {
+    border-radius: 20px !important;
+    overflow-x: hidden;
+    box-shadow: 0px 10px 15px -3px rgba(128, 128, 128, 0.3);
+    .navbar-brand {
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: $font-weight-bold;
+
+      .text-brand {
+        color: $secondary-color;
+      }
+    }
+    .navbar-nav {
+      .nav-link {
+        font-size: 16px;
+        font-weight: $font-weight-regular;
+        color: $primary-color;
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white;
+          transform: scale(1.1);
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}

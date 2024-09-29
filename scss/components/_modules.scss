@@ -1,0 +1,74 @@
+// Modules define contents of sections
+// ------------------------------------------------------
+@import "mixin";
+
+section {
+  padding: 5rem 0;
+
+  .card {
+    border: none;
+    @include shadow(rgba(0, 0, 0, 0.15));
+    margin-bottom: 1rem;
+    border-radius: 18px;
+    overflow: hidden;
+    .img-area {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .card-body {
+      padding: 1.5rem;
+      .lead {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.carousel {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+
+    .carousel-inner {
+      height: 100%;
+    }
+  }
+
+  &.about {
+    .about-img {
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .section-header {
+    h2 {
+      font-size: 2.5rem;
+      color: $primary-color;
+      font-weight: $font-weight-semibold;
+    }
+    p {
+      font-size: 0.875rem;
+      font-weight: $font-weight-medium;
+    }
+  }
+}
+
+.btn {
+  &--primary {
+    padding: 0.5rem 1rem;
+    background-color: $primary-color !important;
+    color: $white !important;
+    border-radius: 20px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $secondary-color !important;
+      color: $white !important;
+    }
+  }
+}
