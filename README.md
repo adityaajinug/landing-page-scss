@@ -5,3 +5,5 @@
 #### Pemrograman sisi client
 
 #### Pertemuan 1
+
+#### url : [Deployment](https://adityaajinug.github.io/landing-page-scss/)
